@@ -5,71 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miriro Fitness Page</title>
-    <style>
-      div {
-        background: linear-gradient(45deg, #f4e7ee, #f39fd5f6);
-        border-radius: 10px;
-        margin: 50px 200px;
-        font-family: sans-serif;
-        color: #635f5f;
-      }
-      h1 {
-        font-size: 44px;
-        text-align: center;
-        padding: 50px 0px 0px;
-      }
-      h2 {
-        font-size: 32px;
-        text-align: center;
-        font-weight: normal;
-      }
-      h3 {
-        font-size: 28px;
-        text-align: center;
-        font-weight: normal;
-        text-decoration: underline;
-      }
-      p {
-        font-size: 20px;
-        margin: 0px 20px;
-      }
-      hr {
-        width: 93%;
-      }
-      .contact {
-        margin: 0px 20px;
-        color: red;
-        font-weight: bold;
-      }
-      .footer {
-        display: block;
-        padding: 4%;
-        font-family: monospace;
-        text-align: center;
-      }
-      img {
-        width: 300px;
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-      }
-      button {
-        margin: 30px 0px;
-        color: #f8f2f2;
-        border: 1px solid #0a0b0c;
-        background: #d51a1a;
-        font-size: 12px;
-        line-height: 22px;
-        padding: 10px;
-        border-radius: 10px;
-        transition: all 200ms ease;
-        box-shadow: #0d0e1a14 0px 8px 8px 0;
-        cursor: pointer;
-      }
-      button:hover {
-        background: #e98383;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <div>
     <body>
@@ -116,20 +53,5 @@
       </span>
       <span class="footer"> Page developed by Miriro Muvoti</span>
     </body>
-    <script>
-      function subscribe() {
-        let name = prompt("Please enter your name?");
-        let email = prompt("Please enter your Email address?");
-
-        alert(
-          "Thank you " +
-            name +
-            " for subscribing to my fitness program. A representative will be in touch with you within 24 hours. Have a great day!"
-        );
-      }
-
-      let element = document.querySelector("button");
-      element.addEventListener("click", subscribe);
-    </script>
   </div>
 </html>
