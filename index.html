@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miriro Fitness Page</title>
+    <style>
+      div {
+        background: linear-gradient(45deg, #f4e7ee, #f39fd5f6);
+        border-radius: 10px;
+        margin: 50px 200px;
+        font-family: sans-serif;
+        color: #635f5f;
+      }
+      h1 {
+        font-size: 44px;
+        text-align: center;
+        padding: 50px 0px 0px;
+      }
+      h2 {
+        font-size: 32px;
+        text-align: center;
+        font-weight: normal;
+      }
+      h3 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 20px;
+        margin: 0px 20px;
+      }
+      hr {
+        width: 93%;
+      }
+      .contact {
+        margin: 0px 20px;
+        color: red;
+        font-weight: bold;
+      }
+      .footer {
+        display: block;
+        padding: 4%;
+        font-family: monospace;
+        text-align: center;
+      }
+      img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      button {
+        margin: 30px 0px;
+        color: #f8f2f2;
+        border: 1px solid #0a0b0c;
+        background: #d51a1a;
+        font-size: 12px;
+        line-height: 22px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 200ms ease;
+        box-shadow: #0d0e1a14 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #e98383;
+      }
+    </style>
+  </head>
+  <div>
+    <body>
+      <h1><em>FitQueen</em></h1>
+
+      <h2>Welcome to my health and fitness page!</h2>
+
+      <hr />
+      <h3>About Me</h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/531/original/20230512_091044.jpg?1683875357"
+        alt="Miriro the Fitness Coach"
+      />
+      <br />
+      <p>
+        My name is Mims. I am passionate about fitness. <br />
+        <br />
+        I have created this page to share my fitness journey to inspire someone.
+        My love for fitness started about 10 years ago, with breaks here and
+        there to attend to motherhood 😊, and sometimes due to backtracking. The
+        most important thing is to get up and get back on track. For the past 2
+        years I have remained consistent and I am happy with my progress. The
+        key is to know that you are in competition with only yourself. Fitness
+        is not an even, <em> it's a lifestyle!</em> Small, consistent effort
+        everyday will yield results in the long term. The focus should be on
+        enjoying the process, and results will eventually show. For me, fitness
+        is more than just physical, it soothes my mind, my soul. I will put on a
+        playlist of my favourite songs for a workout and I promise you, it is
+        therapeutic.
+        <br />
+        In my next posts I will be sharing my daily workout routines. Stay
+        tuned!!
+
+        <br />
+        <br />
+
+        For more details on fitness visit this
+        <a href="https://thefitness.wiki/" target="_blank"> Fitness Wiki </a>
+      </p>
+
+      <span class="contact">
+        Sign up for a personalised fitness plan
+        <button>SUBSCRIBE</button>
+      </span>
+      <span class="footer"> Page developed by Miriro Muvoti</span>
+    </body>
+    <script>
+      function subscribe() {
+        let name = prompt("Please enter your name?");
+        let email = prompt("Please enter your Email address?");
+
+        alert(
+          "Thank you " +
+            name +
+            " for subscribing to my fitness program. A representative will be in touch with you within 24 hours. Have a great day!"
+        );
+      }
+
+      let element = document.querySelector("button");
+      element.addEventListener("click", subscribe);
+    </script>
+  </div>
+</html>
